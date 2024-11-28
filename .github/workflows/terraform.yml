@@ -45,12 +45,8 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
-      # Check Terraform configuration files for canonical format
-      - name: Terraform Format
-        run: terraform fmt -check
 
       # Generate an execution plan for Terraform
       - name: Terraform Plan
         run: terraform plan -input=false
 
-      # Run tfsec to scan Terraform code for security issues

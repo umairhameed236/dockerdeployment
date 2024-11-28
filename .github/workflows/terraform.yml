@@ -3,7 +3,8 @@ name: 'Terraform'
 
 on:
   push:
-    branches: [ "infrastructure" ]  # Trigger on pull request to 'infrastructure' branch
+    branches: [ "Infrastructure" ]
+  pull_request:
 
 permissions:
   contents: read  # Permissions to read repository contents

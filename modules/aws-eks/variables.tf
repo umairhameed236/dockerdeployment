@@ -8,6 +8,20 @@ variable "service_ipv4_cidr" {}
 # variable "private_subnet_ids"{
 
 # }
+variable "subnet_private-us-east-1a" {
+  
+}
+
+variable "subnet_public-us-east-1a" {
+  
+}
+variable "subnet_private-us-east-1b" {
+  
+}
+variable "subnet_public-us-east-1b" {
+  
+}
+
 
 variable "cluster_endpoint_private_access"{}
 
@@ -49,20 +63,3 @@ variable "cluster_version" {
   type        = string
 }
 
-# variable "node_group_name"  {
-#   description = "Name of the EKS node group"
-#   type        = string
-# }
-
-# variable "key_name" {
-#   description = "Name of the key pair"
-#   type        = string
-# }
-
-# variable "public_subnet_ids_b"{
-
-# }
-
-# variable "private_subnet_ids_b"{
-    
-# }

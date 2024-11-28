@@ -1,9 +1,9 @@
 module "eks" {
   source                               = "./modules/aws-eks"
-#   public_subnet_ids                    = module.vpc.public_subnet_id
-#   private_subnet_ids                   = module.vpc.private_subnet_id
-#  public_subnet_ids_b                    = module.vpc.public_subnet_id_b
-#   private_subnet_ids_b                   = module.vpc.private_subnet_id_b
+subnet_private-us-east-1a=local.subnet_private-us-east-1a
+    subnet_private-us-east-1b=local.subnet_private-us-east-1b
+      subnet_public-us-east-1a=local.subnet_public-us-east-1a
+        subnet_public-us-east-1b=local.subnet_public-us-east-1b
   cluster_name                         = local.cluster_name
   cluster_version                      = local.cluster_version
  # key_name                             = local.key_name

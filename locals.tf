@@ -7,6 +7,14 @@ locals {
   vpc_private_subnet_a_cidr_block          = "10.0.1.0/24"
    vpc_public_subnet_b_cidr_block           ="10.0.102.0/24"
   vpc_private_subnet_b_cidr_block          = "10.0.2.0/24"
+  subnet_private-us-east-1a="10.0.0.0/19"
+    subnet_private-us-east-1b="10.0.32.0/19"
+      subnet_public-us-east-1a="10.0.64.0/19"
+        subnet_public-us-east-1b="10.0.96.0/19"
+
+
+
+
   vpc_database_subnet                    = ["10.0.151.0/24", "10.0.152.0/24"]
   vpc_availability_zones                 = ["us-east-1a", "us-east-1b"]
   cluster_endpoint_private_access        = true
